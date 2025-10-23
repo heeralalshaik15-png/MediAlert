@@ -1,0 +1,130 @@
+/* Reset margins and make page fill viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Main container fills the screen */
+#app {
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* adjust as needed */
+    align-items: center;
+    justify-content: flex-start; /* top-aligned, or center */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Light theme (default) */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Cards, containers, navbars adapt to theme */
+.card, .container, header, nav {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme,
+body.dark-theme .container,
+body.dark-theme .card,
+body.dark-theme header,
+body.dark-theme nav,
+body.dark-theme .feature-card,
+body.dark-theme .main-bg,
+body.dark-theme section,
+body.dark-theme .profile-img,
+body.dark-theme .footer,
+body.dark-theme .row,
+body.dark-theme .col-12,
+body.dark-theme .col-md-4,
+body.dark-theme .col-lg-7,
+body.dark-theme .col-lg-5
+{
+    background-color: #232323 !important;
+    color: #ffdcae !important;
+}
+body.dark-theme {
+    background: linear-gradient(120deg, #373737 0%, #232323 100%) !important;
+}
+body.dark-theme .feature-card {
+    background: #2c2c2c !important;
+    color: #ffdcae !important;
+    box-shadow: 0 4px 24px #00000050;
+    border-color: #454545!important;
+}
+body.dark-theme .profile-img {
+    background: #292929 !important;
+    border: 5px solid #1f1f1f !important;
+}
+body.dark-theme .navbar {
+    background: #232323 !important;
+    color: #ffa600 !important;
+}
+body.dark-theme .navbar .navbar-brand,
+body.dark-theme .navbar .nav-link {
+    color: #ffa600 !important;
+}
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme p, 
+body.dark-theme span, 
+body.dark-theme a, 
+body.dark-theme .btn {
+    color: #ffc96b !important;
+}
+body.dark-theme a.btn,
+body.dark-theme .btn {
+    background-color: #5f493d !important;
+    color: #fff !important;
+    border-color: #b17940 !important;
+}
+body.dark-theme .btn-outline-warning {
+    color: #ffdcae !important;
+    border-color: #ffdcae !important;
+}
+.footer,
+.footer-inner {
+    background: #fffbe7;
+    color: #904d07;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark-theme .footer,
+body.dark-theme .footer-inner {
+    background: #191919 !important;
+    color: #ffc779 !important;
+    border-top: 1px solid #333 !important;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;            /* Make body at least full screen */
+  display: flex;
+  flex-direction: column;       /* Stack content vertically */
+}
+.container {
+  flex: 1 0 auto;               /* Main content takes full height but doesn't overflow */
+}
+.footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+
+
